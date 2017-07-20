@@ -2,7 +2,7 @@
 
 Octopus makes creation of decentralized networks super easy.
 
-Connect easily to other nodes
+	- Connect easily to other nodes
 
 ```
 $ octopus ts 193.28.39.82
