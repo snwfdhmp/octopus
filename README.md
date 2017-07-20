@@ -1,6 +1,8 @@
 [Octopus](#)
 ======
 
+> This project is still in development phase
+
 Octopus makes creation of decentralized networks super easy.
 
 ----
