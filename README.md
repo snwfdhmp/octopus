@@ -5,72 +5,6 @@ Octopus makes creation of decentralized networks super easy.
 
 ----
 
-### Connect easily to other nodes
-
-```bash
-$ octopus ts 193.28.39.82
-Connecting to 193.28.39.82:2048...
-Tap 193.28.39.82
-Response token : 923bc615
-Shake 193.28.39.82
-Name snwfdhmp
-Connection successful to snwfdhmp
-```
-
-### Create networks to group nodes
-
-```
-$ octopus net home
-Created network home
-
-$ octopus net home add snwfdhmp
-Invited snwfdhmp to network 'home'
-snwfdhmp joined 'home'
-```
-
-### Take control over the network
-
-```
-$ octopus sh home
-home> @mute apt-get install duck
-Command started on 3 nodes (muted)
-home> echo $USER
-snwfdhmp: Martin
-NAS: root
-webserver: root
-```
-
-### Fusion several networks
-
-```
-$ octopus net game -f home friends
-Fusioning 'home' and 'friends' into 'game'
-home/snwfdhmp joined
-friends/lucas joined
-home/NAS joined
-home/webserver joined
-friends/landry joined
-
-5 nodes in 'game'
-```
-
-### Access local machines remotely
-
-```
-$ octopus ts 192.168.12.56 -w lucas
-Asking 'lucas' permission to access 192.168.12.56
-'lucas' sent token 3fa06a2d
-Shake 192.168.12.56 through 'lucas'
-Name computer
-Connection successful to computer through lucas
-
-$ octopus ping computer
-ping ... OK (25ms)
-
-$ octopus sh computer
-computer> ...
-```
-
 ## Installation
 
 TODO: Describe the installation process
@@ -85,7 +19,7 @@ $ octopus node create
 Name: snwfdhmp
 Port (2048): <Enter>
 ```
-#### Connect to others
+#### Connect easily to other nodes
 You can find a list of open nodes [here](#).
 
 Once you've decided which node to connect to, run `octopus ts <ip> <port (default: 2048)>`
@@ -99,7 +33,7 @@ Name media-center
 Connection successful to media-center
 ```
 
-#### Connect to networks
+#### Start networking
 Create your networks and add your nodes
 ```
 $ octopus net home
@@ -129,7 +63,8 @@ Connect to (5/9) nodes...
 ```
 
 
-#### Remote shell
+#### DSNet Remote Shell
+
 You can start a shell that will run on remote nodes ...
 
 ```
@@ -149,6 +84,48 @@ local> echo $HOME
 media-center: /home/media
 snwfdhmp: /Users/Martin
 ```
+
+### Fusion several networks
+
+You can fusion several networks to make a bigger one.
+This will invite every node of each network to the new network created.
+
+```
+$ octopus net game -f home friends
+Fusioning 'home' and 'friends' into 'game'
+home/snwfdhmp joined
+friends/lucas joined
+home/NAS joined
+home/webserver joined
+friends/landry joined
+
+5 nodes in 'game'
+```
+
+### Access local machines remotely
+
+Situation: Lucas has 2 computers, each one running octopus.
+
+Its first computer (named "lucas") is connected to the internet.
+
+Its second computer (named "second") is just connected to LAN.
+
+You're not connected to Lucas' LAN but you have octopus running connected to lucas' Node.
+
+```
+$ octopus ts second -w lucas
+Asking 'lucas' permission to access 'second'
+'lucas' sent token 3fa06a2d
+Shake 192.168.12.56 through 'lucas'
+Name second
+Connection successful to second through lucas
+
+$ octopus ping computer
+ping ... OK (25ms)
+
+$ octopus sh computer
+computer> ...
+`
 
 ## [Duck](https://github.com/snwfdhmp/duck) support
 
