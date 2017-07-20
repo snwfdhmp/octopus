@@ -127,9 +127,9 @@ $ octopus sh computer
 computer> ...
 ``
 
-## [Duck](https://github.com/snwfdhmp/duck) support
+## [Duck](https://github.com/snwfdhmp/duck) integration
 
-We're actually working on implementing [duck](https://github.com/snwfdhmp/duck) support.
+We're working on [duck](https://github.com/snwfdhmp/duck) integration.
 
 This will permit to run lings on several machines.
 
