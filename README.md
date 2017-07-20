@@ -1,4 +1,4 @@
-Octopus
+[Octopus](#)
 ======
 
 Octopus makes creation of decentralized networks super easy.
