@@ -7,10 +7,8 @@ Octopus makes creation of decentralized networks super easy.
 
 ### Connect easily to other nodes
 
-`$ octopus ts 193.28.39.82`
-
-
-```
+```bash
+$ octopus ts 193.28.39.82
 Connecting to 193.28.39.82:2048...
 Tap 193.28.39.82
 Response token : 923bc615
