@@ -125,7 +125,7 @@ ping ... OK (25ms)
 
 $ octopus sh computer
 computer> ...
-``
+```
 
 ## [Duck](https://github.com/snwfdhmp/duck) integration
 
