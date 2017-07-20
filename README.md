@@ -2,7 +2,7 @@
 
 Octopus makes creation of decentralized networks super easy.
 
-	- Connect easily to other nodes
+### Connect easily to other nodes
 
 ```
 $ octopus ts 193.28.39.82
@@ -14,7 +14,7 @@ Name snwfdhmp
 Connection successful to snwfdhmp
 ```
 
-Create networks to group nodes
+### Create networks to group nodes
 
 ```
 $ octopus net home
